@@ -1,0 +1,624 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden; 
+}
+@font-face {
+    font-family: "Comfortaa";
+    src: url("Comfortaa-Light.ttf") format("truetype");
+}
+header {
+    height: 0;
+    width: 0;
+}
+
+.marca {
+    position: fixed;
+    height: 50px;
+    padding: 15px;
+    z-index: 2;
+}
+
+.barra-superior {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background-image: linear-gradient(50deg, #BA82B8, #79C8D2);
+    /* border-radius: 0 0 30px 0; */
+}
+
+.barra-superior, .nav-barra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+#inicio {
+    height: 770px;
+    background-color: #BA82B8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-family: 'Comfortaa';
+    color: white;
+    background-image: linear-gradient(to bottom right, #BA82B8, #79C8D2);
+}
+#inicio img{
+    height: 300px;
+    width: auto;
+    padding-right: 50px;
+    margin-left: 100px;
+}
+#inicio #linha{
+    width: 600px;
+}
+
+.nav-barra .botao {
+    float: left;
+    padding: 0px 25px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'Comfortaa';
+    text-decoration: none;
+    transition: all 0.4s;
+    letter-spacing: 2px;
+}
+
+.nav-barra li {
+    list-style-type: none;
+}
+
+.nav-barra .botao:hover {
+    /* animation-name: animation;
+    animation-duration: 0.2s;
+    animation-timing-function: linear; */
+    transform: all;
+    transform: scale(1.1);
+}
+.aumentar{
+    transform: all;
+    transform: scale(1.3);
+}
+
+/* @keyframes animation {
+    from {transform: scale(1)}
+    to {transform: scale(1.1)}
+} */
+#conteudo1, #conteudo2, #conteudo3, #conteudo4, #conteudo5{
+    width: 100%;
+    height: 755px;
+    padding-top: 80px;
+    transition: all 0.4s;
+    /* float: left; */
+    transition: all 2.5s;
+    overflow: hidden;
+
+}
+#conteudo1{
+    width: 200%;
+    height: 755px;
+    overflow: hidden;
+}
+#conteudo1 .campo-txt{
+    width: 100%;
+    height: 755px;
+    background-color: #BA82B8;
+    border-radius: 0 100px 0 0;
+    text-align: center;
+    float: left;
+    
+}
+#conteudo2 .campo-txt{
+    width: 50%;
+    height: 755px;
+    background-color: #79C8D2;
+    border-radius: 0 100px 0 0;
+    text-align: center;
+    float: left;
+}
+#conteudo3 .campo-txt{
+    width: 50%;
+    height: 755px;
+    background-color: #BA82B8;
+    border-radius: 0 100px 0 0;
+    text-align: center;
+    float: left;
+}
+#conteudo4 .campo-txt{
+    width: 50%;
+    height: 755px;
+    background-color: #BA82B8;
+    border-radius: 0 100px 0 0;
+    text-align: center;
+    float: left;
+    transform: all 0.4s;
+}
+#conteudo5 .campo-txt{
+    width: 50%;
+    height: 755px;
+    background-color: #BA82B8;
+    border-radius: 0 100px 0 0;
+    text-align: center;
+    float: left;
+    transform: all 0.4s;
+}
+#conteudo2 #linha{
+    width: 300px;
+    height: 8px;
+}
+
+#conteudo2 .texto{
+    margin-top: 0px;
+}
+#conteudo1 #linha{
+    width: 900px;
+}
+#conteudo3 #linha{
+    width: 300px;
+    height: 8px;
+}
+#conteudo4 #linha{
+    width: 300px;
+    height: 8px;
+}
+#conteudo5 #linha{
+    width: 250px;
+    height: 8px;
+}
+#conteudo3 img{
+    width: 565px;
+    height: 250px;
+    margin-top: 200px;
+}
+#conteudo4 img{
+    width: 600px;
+    height: 155px;
+    margin-top: 250px;
+}
+#conteudo5 img{
+    width: 600px;
+    height: 270px;
+    margin-top: 250px;
+}
+.texto p{
+    width: 600px;
+    display: block;
+    float: left;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: left;
+    padding: 30px;
+
+}
+/* #conteudo1 .parte1 .texto p{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    float: left;
+} */
+.texto{
+    /* width: 1366px;
+    display: block; */
+    margin-top: 200px;
+
+}
+.titulo{
+    height: 60px;
+    padding-top: 100px;
+    padding-left: 35px;
+    float: left;
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+}
+#conteudo1 .campo-txt{
+    border-radius: 0;
+}
+#conteudo1{
+    width: 400%;
+}
+ #conteudo1 .parte2 #linha{
+    width: 650px;
+}
+#conteudo1 .parte3 #linha{
+    width: 600px;
+}
+#conteudo1 .parte4 #linha{
+    width: 1000px;
+}
+#conteudo1 #seta-voltar{
+    width: 30px;
+    height: 60px;
+}
+#conteudo1 #seta{
+    transform: rotate(180deg);
+    margin-top: 22px;
+}
+#conteudo1 .titulo{
+    width: 1366px;
+}
+#conteudo1 .texto{
+    width: 1366px;
+    display: block;
+    margin-top: 300px;
+}
+
+#conteudo1 .parte1, .parte2, .parte3, .parte4{
+    transition: all 0.4s;
+    width: 100%;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    } 
+#linha{
+    height: 8px;
+    width: 500px;
+    background-color: white;
+    float: left;
+    margin-top: 25px;
+    border-radius: 10px;
+    padding-right: 100px;
+}
+.titulo h1{
+    font-family: 'Comfortaa';
+    color: white;
+    float: left;
+    padding-right: 25px;
+    font-size: 45px;
+    float: left;
+    display: block;
+    
+}
+#conteudo1 .titulo #linha{
+    padding-right: 65px;
+}
+#conteudo2 .titulo #linha{
+    padding-right: 50px;
+}
+#conteudo3 .titulo #linha{
+    padding-right: 125px;
+}
+#conteudo4 #degrade .titulo #linha{
+    padding-right: 75px;
+}
+#conteudo4 .titulo #linha{
+    padding-right: 125px;
+}
+.texto h2{
+    font-size: 35px;
+    font-family: 'Comfortaa';
+    color: white;
+    float: left;
+    padding-right: 30px;
+    float: left;
+    padding-left: 30px;
+
+}
+.h2 {
+    width: 1366px;
+}
+.campo-image{
+    width: 50%;
+    float: left;
+    transition: all 0.4s;
+    overflow: hidden;
+}
+.recolher{
+    max-width: 0;
+    transform: all;
+}
+.campo-image img{
+    width: 140px;
+    height: 180px;
+    float: left;
+    margin: 20px;
+
+}
+.campo-image .image{
+    width: 100%;
+    float: left;
+}
+
+.campo-image .info{
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+    color: #BA82B8;
+    display: block;
+    width: 600px;
+    height: 180px;
+    padding-top: 40px;
+}
+.campo-image h2{
+    font-size: 35px;
+    font-family: 'Comfortaa';
+    color: #BA82B8;
+    float: left;
+    margin-top: 20px;
+    margin-left: 35px;
+    /* padding-right: 30px; */
+    /* padding-left: 30px; */
+}
+#seta{
+    width: 30px;
+    height: 60px;
+    margin: 0;
+    margin-right: 30px;
+    margin-top: 10px;
+    float: right;
+    padding-top: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#conteudo3 #seta{
+    width: 30px;
+    height: 60px;
+    float: right;
+    margin: 0;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+#conteudo3 .campo-image img{
+    height: 600px;
+    width: auto;
+    float: left;
+    margin-top: 150px;
+}
+#conteudo3 .parte1 .campo-image img{
+    width: 600px;
+    height: auto;
+}
+#conteudo3 .parte2 .campo-txt{
+    width: 35%;
+
+}
+#conteudo3 .parte2 .campo-image{
+    width: 65%;
+}
+#conteudo3 .parte2 .texto p{
+    margin-top: 100px;
+    width: 400px;
+}
+#conteudo3 .parte3 .campo-image img{
+    width: 400px;
+    height: auto;
+    margin-left: 150px;
+}
+#conteudo3 .parte3 #linha{
+    width: 150px;
+    margin-right: 50px;
+}
+#conteudo3 .parte3 .texto p{
+    margin-top: 100px;
+}
+#conteudo3 .parte4 #linha{
+    width: 150px;
+    margin-right: 50px;
+}
+#conteudo3 .parte4 .texto p{
+    margin-top: 100px;
+    width: 600px;
+}
+#conteudo3 .parte4 .campo-image img{
+    width: 400px;
+    height: auto;
+    margin-left: 150px;
+}
+#conteudo3 .parte5 #linha{
+    width: 150px;
+    margin-right: 50px;
+}
+#conteudo3 .parte5 .texto p{
+    margin-top: 100px;
+    width: 600px;
+}
+#conteudo3 .parte5 .campo-image img{
+    width: 400px;
+    height: auto;
+    margin-left: 150px;
+    margin-top: 350px;
+}
+#conteudo3 #seta:hover{
+    transform: all;
+    width: 40px;
+    height: 75px;
+}
+#conteudo3 #seta-vlotar:hover{
+    transform: all;
+    width: 40px;
+    height: 75px;
+}
+#seta:hover{
+    transform: all;
+    width: 40px;
+    height: 75px;
+}
+/* .campo-image .seta img{
+    width: 20px;
+    height: 50px;
+} */
+/* #degrade{
+    display: none;
+} */
+.campo-txt #seta-voltar{
+    width: 30px;
+    height: 60px;
+    margin: 0;
+    margin-left: 30px;
+    float: left;
+    padding-top: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#conteudo1 #seta-voltar:hover{
+    transform: all;
+    width: 40px;
+    height: 75px;
+}
+#conteudo4 .parte4 #seta-voltar{
+    width: 30px;
+    height: 60px;
+    margin: 0;
+    margin-left: 30px;
+    float: left;
+    padding-top: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#conteudo4 .parte5 #seta-voltar{
+    width: 30px;
+    height: 60px;
+    margin: 0;
+    margin-left: 30px;
+    float: left;
+    padding-top: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#conteudo4 #seta-voltar:hover{
+    transform: all;
+    width: 40px;
+    height: 75px;
+}
+#conteudo4 .parte1{
+    transition: all 0.4s;
+    width: 100%;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+}
+#conteudo4 .parte1 .campo-txt{
+    background-color: #79C8D2;
+}
+#conteudo4 .parte2{
+    transition: all 0.4s;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+}
+#conteudo4 .parte3{
+    transition: all 0.4s;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+}
+#conteudo4 .parte3 .campo-txt{
+    background-color: #79C8D2;
+}
+#conteudo4 .parte4{
+    transition: all 0.4s;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+}
+#conteudo4 .parte4 img{
+    height: 520px;
+    margin-left: 45px;
+    margin-top: 100px;
+}
+#conteudo4 .parte3 .titulo{
+    display: block;
+}
+#conteudo4 .parte4 .titulo{
+    display: block;
+}
+#conteudo4 .parte5{
+    transition: all 0.4s;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    background-color: #BA82B8;
+}
+#conteudo4 .parte5{
+    background-color: #79C8D2;
+}
+#conteudo4 .parte5 #linha{
+    width: 800px;
+}
+#conteudo4 .parte5 img{
+    width: 1200px;
+    height: 430px;
+    margin-left: 75px;
+    margin-top: 40px;
+    float: left;
+    
+}
+#conteudo4{
+    width: 500%;
+
+}
+#conteudo4 .parte1 .campo-image img{
+    /* height: 300px;
+    width: 95%;
+    margin-left: 45px; */
+    margin-top: 100px;
+}
+#conteudo4 .parte2 .campo-image img{
+    height: 200px;
+    width: 85%;
+    margin-left: 45px;
+    margin-top: 100px;
+}
+#conteudo4 .parte3 .campo-image img{
+    height: 500px;
+    width: 85%;
+    margin-left: 45px;
+    margin-top: 100px;
+}
+#conteudo4 .parte2 .campo-image #seta{
+    width: 30px;
+    height: 60px;
+    margin: 0;
+    margin-right: 30px;
+    float: right;
+    padding-top: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#conteudo4 .parte1 .campo-image #seta{
+    width: 30px;
+    height: 60px;
+    margin: 0;
+    margin-right: 30px;
+    float: right;
+    padding-top: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#conteudo4 .parte3 .campo-image #seta{
+    width: 30px;
+    height: 60px;
+    margin: 0;
+    margin-right: 30px;
+    float: right;
+    padding-top: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#conteudo4 .parte4 .campo-image #seta{
+    width: 30px;
+    height: 60px;
+    margin: 0;
+    margin-right: 30px;
+    float: right;
+    padding-top: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#conteudo4 .campo-image #seta:hover{
+    transform: all;
+    width: 40px;
+    height: 75px;
+}
+.anima{
+    max-width: 0;
+    opacity: 0;
+}
